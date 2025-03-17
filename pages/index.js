@@ -433,7 +433,7 @@ Added results display section
 15Implemented PDF download feature
 16 Formatted PDF output
 
-17
+17Updated README with project details
 18
 19
 20
