@@ -421,7 +421,8 @@ const runMLFQ = () => {
 };
 
 
-10.
+10.Made tweaks here and there throughout, I did not realize I needed to upload commits throughout development, I just thought commits were just snapshots of what we did so far so i just made comments of what I did
+Added results display section
 11.
 12.
 13.
