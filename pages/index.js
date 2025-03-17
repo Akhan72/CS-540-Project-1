@@ -313,7 +313,22 @@ const generateProcesses = () => {
   setResults({}); // Clear previous results
 };
 
-5.
+5.Implemented FIFO scheduling algorithm
+->
+const runFIFO = () => {
+  let completionTime = 0;
+  let fifoResults = [];
+  processes.forEach((process, index) => {
+    setTimeout(() => {
+      completionTime += process.burstTime;
+      fifoResults.push({
+        id: process.id,
+        completionTime: completionTime,
+      });
+      setResults((prev) => ({ ...prev, FIFO: [...fifoResults] }));
+    }, index * 1000);
+  });
+};
 6.
 7.
 8.
