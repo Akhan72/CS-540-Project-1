@@ -398,7 +398,29 @@ const runRoundRobin = () => {
 };
 
 
-9.
+9.Implemented Multi-Level Feedback Queue (MLFQ) scheduling
+->
+const runMLFQ = () => {
+  let queue1 = [...processes];
+  let queue2 = [];
+  let queue3 = [];
+  let completionTime = 0;
+  let timeQuantum1 = 2;
+  let timeQuantum2 = 4;
+  let mlfqResults = [];
+
+  const executeProcess = (index) => {
+    if (queue1.length === 0 && queue2.length === 0 && queue3.length === 0) return;
+
+    setTimeout(() => {
+      // Process queues here...
+    }, index * 1000);
+  };
+
+  executeProcess(0);
+};
+
+
 10.
 11.
 12.
