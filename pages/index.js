@@ -431,7 +431,8 @@ Added results display section
 14.Styled UI layout for improved usability
 
 15Implemented PDF download feature
-16
+16 Formatted PDF output
+
 17
 18
 19
