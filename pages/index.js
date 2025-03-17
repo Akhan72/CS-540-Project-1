@@ -428,7 +428,8 @@ Added results display section
 12.Added animations using framer-motion
 13.Improved animation timing for better UX
 
-14.
+14.Styled UI layout for improved usability
+
 15
 16
 17
