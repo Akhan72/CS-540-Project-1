@@ -267,5 +267,9 @@ export default function Home() {
 I did not fully understand commits, I did research on it through chatgpt like you said, and it just told me it was a checkpoint, meanign
 a snapshot of what has been done, though comments. so what I had originally done was keep comments on what i did throughout, here are they:
 
+1. Installed dependencies (chart.js, jspdf, framer-motion)
+-> 
+npm install chart.js jspdf framer-motion
+
 
 */
