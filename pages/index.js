@@ -365,7 +365,39 @@ const runSTCF = () => {
     }, index * 1000);
   });
 };
-8.
+8.Implemented Round Robin scheduling algorithm
+->
+const runRoundRobin = () => {
+  let queue = [...processes];
+  let completionTime = 0;
+  let rrResults = [];
+  let quantum = timeQuantum > 0 ? timeQuantum : 3;
+
+  const executeProcess = (index) => {
+    if (queue.length === 0) return;
+
+    let process = queue.shift();
+    let timeSlice = Math.min(quantum, process.burstTime);
+
+    setTimeout(() => {
+      completionTime += timeSlice;
+      process.burstTime -= timeSlice;
+
+      if (process.burstTime > 0) {
+        queue.push(process);
+      } else {
+        rrResults.push({ id: process.id, completionTime: completionTime });
+        setResults((prev) => ({ ...prev, RR: [...rrResults] }));
+      }
+
+      executeProcess(index + 1);
+    }, index * 1000);
+  };
+
+  executeProcess(0);
+};
+
+
 9.
 10.
 11.
