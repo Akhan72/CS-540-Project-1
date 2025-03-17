@@ -426,7 +426,8 @@ Added results display section
 11.Implemented Chart.js for visualizing results
 
 12.Added animations using framer-motion
-13.
+13.Improved animation timing for better UX
+
 14.
 15
 16
