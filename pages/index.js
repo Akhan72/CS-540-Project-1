@@ -347,7 +347,24 @@ const runSJF = () => {
     }, index * 1000);
   });
 };
-7.
+7.Implemented STCF scheduling algorithm
+->
+const runSTCF = () => {
+  let currentTime = 0;
+  let remainingProcesses = [...processes].sort((a, b) => a.burstTime - b.burstTime);
+  let stcfResults = [];
+
+  remainingProcesses.forEach((process, index) => {
+    setTimeout(() => {
+      currentTime += process.burstTime;
+      stcfResults.push({
+        id: process.id,
+        completionTime: currentTime,
+      });
+      setResults((prev) => ({ ...prev, STCF: [...stcfResults] }));
+    }, index * 1000);
+  });
+};
 8.
 9.
 10.
