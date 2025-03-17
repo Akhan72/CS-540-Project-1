@@ -435,6 +435,18 @@ Added results display section
 
 17Updated README with project details
 18Optimized performance for animations
-19
-20
+19 and 20 Final commit: Project ready for submission by updating next.config.js
+
+@type {import('next').NextConfig} 
+const nextConfig = {
+  output: 'export', // Enables static export
+  images: {
+    unoptimized: true, // If using Next.js Image component
+  },
+  trailingSlash: true, // Ensures proper routing for GitHub Pages
+};
+
+module.exports = nextConfig;
+
+
 */
