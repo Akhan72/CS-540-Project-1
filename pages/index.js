@@ -434,7 +434,7 @@ Added results display section
 16 Formatted PDF output
 
 17Updated README with project details
-18
+18Optimized performance for animations
 19
 20
 */
