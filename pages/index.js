@@ -299,6 +299,34 @@ const [timeQuantum, setTimeQuantum] = useState("");
   <button onClick={generateProcesses}>Generate Processes</button>
 </div>
 
+4. Implemented function to generate random processes
+->
+const generateProcesses = () => {
+  const newProcesses = [];
+  for (let i = 0; i < numProcesses; i++) {
+    newProcesses.push({
+      id: i + 1,
+      burstTime: Math.floor(Math.random() * 10) + 1,
+    });
+  }
+  setProcesses(newProcesses);
+  setResults({}); // Clear previous results
+};
 
-
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15
+16
+17
+18
+19
+20
 */
