@@ -279,4 +279,26 @@ const [processes, setProcesses] = useState([]);
 const [results, setResults] = useState({});
 const [timeQuantum, setTimeQuantum] = useState("");
 
+3.Added input form to allow user to specify process count and time quantum
+->
+<div>
+  <label>Number of Processes:</label>
+  <input
+    type="number"
+    value={numProcesses}
+    onChange={(e) => setNumProcesses(e.target.value)}
+    placeholder="Enter number of processes"
+  />
+  <label>Time Quantum:</label>
+  <input
+    type="number"
+    value={timeQuantum}
+    onChange={(e) => setTimeQuantum(Number(e.target.value))}
+    placeholder="Enter Time Quantum"
+  />
+  <button onClick={generateProcesses}>Generate Processes</button>
+</div>
+
+
+
 */
