@@ -425,7 +425,7 @@ const runMLFQ = () => {
 Added results display section
 11.Implemented Chart.js for visualizing results
 
-12.
+12.Added animations using framer-motion
 13.
 14.
 15
