@@ -272,4 +272,11 @@ a snapshot of what has been done, though comments. so what I had originally done
 npm install chart.js jspdf framer-motion
 
 
+2.Initialized state variables for managing processes and results
+->
+const [numProcesses, setNumProcesses] = useState("");
+const [processes, setProcesses] = useState([]);
+const [results, setResults] = useState({});
+const [timeQuantum, setTimeQuantum] = useState("");
+
 */
