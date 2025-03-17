@@ -329,7 +329,24 @@ const runFIFO = () => {
     }, index * 1000);
   });
 };
-6.
+6.Implemented SJF scheduling algorithm
+->
+const runSJF = () => {
+  let completionTime = 0;
+  let sjfResults = [];
+  let sortedProcesses = [...processes].sort((a, b) => a.burstTime - b.burstTime);
+
+  sortedProcesses.forEach((process, index) => {
+    setTimeout(() => {
+      completionTime += process.burstTime;
+      sjfResults.push({
+        id: process.id,
+        completionTime: completionTime,
+      });
+      setResults((prev) => ({ ...prev, SJF: [...sjfResults] }));
+    }, index * 1000);
+  });
+};
 7.
 8.
 9.
